@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
+use App\Contracts\VideoPostable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class VideoPost extends BaseModel
+class VideoPost extends BaseModel implements VideoPostable
 {
     protected $fillable = [
         'post_id',
