@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\PostRequest;
 use App\Services\Base\PostService;
 
-class PostsController extends Controller
+class PostsController extends BaseController
 {
     private PostService $postService;
 
